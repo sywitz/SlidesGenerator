@@ -1,1 +1,31 @@
  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slides Generator</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Slides Generator</h1>
+        <form action="/generate_slides" method="post">
+            <label for="document_text">Document Text:</label>
+            <textarea id="document_text" name="document_text" rows="10"></textarea>
+
+            <label for="prompt">Prompt:</label>
+            <input type="text" id="prompt" name="prompt">
+
+            <label for="theme">Theme:</label>
+            <select id="theme" name="theme">
+                <option value="default">Default</option>
+                <option value="professional">Professional</option>
+                <option value="creative">Creative</option>
+            </select>
+
+            <button type="submit">Generate Slides</button>
+        </form>
+    </div>
+</body>
+</html>
