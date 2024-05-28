@@ -14,6 +14,10 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    overflow-y: auto;
+    max-height: 90vh;
 }
 
 h1 {
@@ -23,6 +27,7 @@ h1 {
 form {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 label {
@@ -45,4 +50,24 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+.slide-preview {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.slide-preview h2 input {
+    width: 100%;
+    border: none;
+    font-size: 24px;
+}
+
+.slide-preview textarea {
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    height: 100px;
 }

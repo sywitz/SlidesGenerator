@@ -13,12 +13,7 @@
             {% for slide in slides %}
                 <div class="slide-preview">
                     <h2><input type="text" name="title{{ loop.index }}" value="{{ slide.title }}"></h2>
-                    <textarea name="content{{ loop.index }}">{{ slide.content }}</textarea>
-                    <ul>
-                        {% for bullet in slide.bullets %}
-                            <li><input type="text" name="bullets{{ loop.parentloop.index }}" value="{{ bullet }}"></li>
-                        {% endfor %}
-                    </ul>
+                    <textarea name="content{{ loop.index }}" rows="10" cols="50">{{ slide.content }}</textarea>
                 </div>
             {% endfor %}
             <button type="submit">Update Slides</button>
